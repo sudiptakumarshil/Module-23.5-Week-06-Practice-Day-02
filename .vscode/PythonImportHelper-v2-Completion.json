@@ -1023,7 +1023,7 @@
         "kind": 5,
         "importPath": "mamar_bank.settings",
         "description": "mamar_bank.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = \"smtp.office365.com\"\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\n# EMAIL_HOST_USER = env(\"EMAIL\")\n# EMAIL_HOST_PASSWORD = env(\"EMAIL_PASSWORD\")\n# DEFAULT_FROM_EMAIL = env(\"EMAIL\")\nEMAIL_HOST_USER = \"sudiptoshil@outlook.com\"\nEMAIL_HOST_PASSWORD = \"sudiptakumarshil#@234\"",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = \"smtp.office365.com\"\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\n# EMAIL_HOST_USER = env(\"EMAIL\")\n# EMAIL_HOST_PASSWORD = env(\"EMAIL_PASSWORD\")\n# DEFAULT_FROM_EMAIL = env(\"EMAIL\")\nEMAIL_HOST_USER = \"\"\nEMAIL_HOST_PASSWORD = \"\"",
         "detail": "mamar_bank.settings",
         "documentation": {}
     },
@@ -1032,7 +1032,7 @@
         "kind": 5,
         "importPath": "mamar_bank.settings",
         "description": "mamar_bank.settings",
-        "peekOfCode": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = \"smtp.office365.com\"\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\n# EMAIL_HOST_USER = env(\"EMAIL\")\n# EMAIL_HOST_PASSWORD = env(\"EMAIL_PASSWORD\")\n# DEFAULT_FROM_EMAIL = env(\"EMAIL\")\nEMAIL_HOST_USER = \"sudiptoshil@outlook.com\"\nEMAIL_HOST_PASSWORD = \"sudiptakumarshil#@234\"\nDEFAULT_FROM_EMAIL = \"sudiptoshil@outlook.com\"",
+        "peekOfCode": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = \"smtp.office365.com\"\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\n# EMAIL_HOST_USER = env(\"EMAIL\")\n# EMAIL_HOST_PASSWORD = env(\"EMAIL_PASSWORD\")\n# DEFAULT_FROM_EMAIL = env(\"EMAIL\")\nEMAIL_HOST_USER = \"\"\nEMAIL_HOST_PASSWORD = \"\"\nDEFAULT_FROM_EMAIL = \"\"",
         "detail": "mamar_bank.settings",
         "documentation": {}
     },
@@ -1041,7 +1041,7 @@
         "kind": 5,
         "importPath": "mamar_bank.settings",
         "description": "mamar_bank.settings",
-        "peekOfCode": "EMAIL_HOST = \"smtp.office365.com\"\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\n# EMAIL_HOST_USER = env(\"EMAIL\")\n# EMAIL_HOST_PASSWORD = env(\"EMAIL_PASSWORD\")\n# DEFAULT_FROM_EMAIL = env(\"EMAIL\")\nEMAIL_HOST_USER = \"sudiptoshil@outlook.com\"\nEMAIL_HOST_PASSWORD = \"sudiptakumarshil#@234\"\nDEFAULT_FROM_EMAIL = \"sudiptoshil@outlook.com\"",
+        "peekOfCode": "EMAIL_HOST = \"smtp.office365.com\"\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\n# EMAIL_HOST_USER = env(\"EMAIL\")\n# EMAIL_HOST_PASSWORD = env(\"EMAIL_PASSWORD\")\n# DEFAULT_FROM_EMAIL = env(\"EMAIL\")\nEMAIL_HOST_USER = \"\"\nEMAIL_HOST_PASSWORD = \"\"\nDEFAULT_FROM_EMAIL = \"\"",
         "detail": "mamar_bank.settings",
         "documentation": {}
     },
@@ -1050,7 +1050,7 @@
         "kind": 5,
         "importPath": "mamar_bank.settings",
         "description": "mamar_bank.settings",
-        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_PORT = 587\n# EMAIL_HOST_USER = env(\"EMAIL\")\n# EMAIL_HOST_PASSWORD = env(\"EMAIL_PASSWORD\")\n# DEFAULT_FROM_EMAIL = env(\"EMAIL\")\nEMAIL_HOST_USER = \"sudiptoshil@outlook.com\"\nEMAIL_HOST_PASSWORD = \"sudiptakumarshil#@234\"\nDEFAULT_FROM_EMAIL = \"sudiptoshil@outlook.com\"",
+        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_PORT = 587\n# EMAIL_HOST_USER = env(\"EMAIL\")\n# EMAIL_HOST_PASSWORD = env(\"EMAIL_PASSWORD\")\n# DEFAULT_FROM_EMAIL = env(\"EMAIL\")\nEMAIL_HOST_USER = \"\"\nEMAIL_HOST_PASSWORD = \"\"\nDEFAULT_FROM_EMAIL = \"\"",
         "detail": "mamar_bank.settings",
         "documentation": {}
     },
@@ -1059,7 +1059,7 @@
         "kind": 5,
         "importPath": "mamar_bank.settings",
         "description": "mamar_bank.settings",
-        "peekOfCode": "EMAIL_PORT = 587\n# EMAIL_HOST_USER = env(\"EMAIL\")\n# EMAIL_HOST_PASSWORD = env(\"EMAIL_PASSWORD\")\n# DEFAULT_FROM_EMAIL = env(\"EMAIL\")\nEMAIL_HOST_USER = \"sudiptoshil@outlook.com\"\nEMAIL_HOST_PASSWORD = \"sudiptakumarshil#@234\"\nDEFAULT_FROM_EMAIL = \"sudiptoshil@outlook.com\"",
+        "peekOfCode": "EMAIL_PORT = 587\n# EMAIL_HOST_USER = env(\"EMAIL\")\n# EMAIL_HOST_PASSWORD = env(\"EMAIL_PASSWORD\")\n# DEFAULT_FROM_EMAIL = env(\"EMAIL\")\nEMAIL_HOST_USER = \"\"\nEMAIL_HOST_PASSWORD = \"\"\nDEFAULT_FROM_EMAIL = \"\"",
         "detail": "mamar_bank.settings",
         "documentation": {}
     },
@@ -1068,7 +1068,7 @@
         "kind": 5,
         "importPath": "mamar_bank.settings",
         "description": "mamar_bank.settings",
-        "peekOfCode": "EMAIL_HOST_USER = \"sudiptoshil@outlook.com\"\nEMAIL_HOST_PASSWORD = \"sudiptakumarshil#@234\"\nDEFAULT_FROM_EMAIL = \"sudiptoshil@outlook.com\"",
+        "peekOfCode": "EMAIL_HOST_USER = \"\"\nEMAIL_HOST_PASSWORD = \"\"\nDEFAULT_FROM_EMAIL = \"\"",
         "detail": "mamar_bank.settings",
         "documentation": {}
     },
@@ -1077,7 +1077,7 @@
         "kind": 5,
         "importPath": "mamar_bank.settings",
         "description": "mamar_bank.settings",
-        "peekOfCode": "EMAIL_HOST_PASSWORD = \"sudiptakumarshil#@234\"\nDEFAULT_FROM_EMAIL = \"sudiptoshil@outlook.com\"",
+        "peekOfCode": "EMAIL_HOST_PASSWORD = \"\"\nDEFAULT_FROM_EMAIL = \"\"",
         "detail": "mamar_bank.settings",
         "documentation": {}
     },
@@ -1086,7 +1086,7 @@
         "kind": 5,
         "importPath": "mamar_bank.settings",
         "description": "mamar_bank.settings",
-        "peekOfCode": "DEFAULT_FROM_EMAIL = \"sudiptoshil@outlook.com\"",
+        "peekOfCode": "DEFAULT_FROM_EMAIL = \"\"",
         "detail": "mamar_bank.settings",
         "documentation": {}
     },

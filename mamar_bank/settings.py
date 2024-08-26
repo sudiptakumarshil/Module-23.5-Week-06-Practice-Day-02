@@ -152,6 +152,6 @@ EMAIL_PORT = 587
 # EMAIL_HOST_PASSWORD = env("EMAIL_PASSWORD")
 # DEFAULT_FROM_EMAIL = env("EMAIL")
 
-EMAIL_HOST_USER = "sudiptoshil@outlook.com"
-EMAIL_HOST_PASSWORD = "sudiptakumarshil#@234"
-DEFAULT_FROM_EMAIL = "sudiptoshil@outlook.com"
+EMAIL_HOST_USER = ""
+EMAIL_HOST_PASSWORD = ""
+DEFAULT_FROM_EMAIL = ""
