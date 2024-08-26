@@ -1,11 +1,13 @@
 from django.shortcuts import render
 from django.views.generic import FormView
-from .forms import UserRegistrationForm,UserUpdateForm
+from .forms import UserRegistrationForm,UserUpdateForm,CustomPasswordChangeForm
 from django.contrib.auth import login, logout
 from django.urls import reverse_lazy
-from django.contrib.auth.views import LoginView, LogoutView
+from django.contrib.auth.views import LoginView, LogoutView, PasswordChangeView
 from django.views import View
 from django.shortcuts import redirect
+from django.contrib import messages
+from django.core.mail import EmailMultiAlternatives
 
 class UserRegistrationView(FormView):
     template_name = 'accounts/user_registration.html'
@@ -44,5 +46,19 @@ class UserBankAccountUpdateView(View):
             form.save()
             return redirect('profile')  # Redirect to the user's profile page
         return render(request, self.template_name, {'form': form})
+
+class UserPasswordChangeView(PasswordChangeView):
+    template_name = 'accounts/password_change_form.html'
+    form_class = CustomPasswordChangeForm
+    success_url = reverse_lazy('profile')
+    
+    def form_valid(self, form):
+        messages.success(self.request, 'Your password has been changed successfully!')
+        send_success_email(self.request.user,'Password Changed','Your password has been changed successfully!')
+        return super().form_valid(form)
+
+def send_success_email(user, subject, body):
+    send_email = EmailMultiAlternatives(subject, body, to=[user.email])
+    send_email.send()
     
     

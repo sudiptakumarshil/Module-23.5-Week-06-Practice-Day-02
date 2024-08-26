@@ -1,5 +1,5 @@
 
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, PasswordChangeForm
 from django import forms
 from .constants import ACCOUNT_TYPE, GENDER_TYPE
 from django.contrib.auth.models import User
@@ -125,3 +125,16 @@ class UserUpdateForm(forms.ModelForm):
             user_address.save()
 
         return user
+
+class CustomPasswordChangeForm(PasswordChangeForm):
+    def __init__(self, *args, **kwargs):
+        super(CustomPasswordChangeForm, self).__init__(*args, **kwargs)
+        self.fields['old_password'].widget.attrs.update({
+            'class': 'appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
+        })
+        self.fields['new_password1'].widget.attrs.update({
+            'class': 'appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
+        })
+        self.fields['new_password2'].widget.attrs.update({
+            'class': 'appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
+        })
