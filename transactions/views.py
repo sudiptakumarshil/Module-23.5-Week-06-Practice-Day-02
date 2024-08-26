@@ -72,7 +72,7 @@ class DepositMoneyView(TransactionCreateMixin):
             self.request,
             f'{"{:,.2f}".format(float(amount))}$ was deposited to your account successfully',
         )
-        # send_transaction_email(self.request.user, amount, "Deposite Message", "transactions/deposite_email.html")
+        send_transaction_email(self.request.user, amount, "Deposite Message", "transactions/deposite_email.html")
         return super().form_valid(form)
 
 
@@ -96,7 +96,7 @@ class WithdrawMoneyView(TransactionCreateMixin):
             self.request,
             f'Successfully withdrawn {"{:,.2f}".format(float(amount))}$ from your account',
         )
-        # send_transaction_email(self.request.user, amount, "Withdrawal Message", "transactions/withdrawal_email.html")
+        send_transaction_email(self.request.user, amount, "Withdrawal Message", "transactions/withdrawal_email.html")
         return super().form_valid(form)
 
 
@@ -119,7 +119,7 @@ class LoanRequestView(TransactionCreateMixin):
             self.request,
             f'Loan request for {"{:,.2f}".format(float(amount))}$ submitted successfully',
         )
-        # send_transaction_email(self.request.user, amount, "Loan Request Message", "transactions/loan_email.html")
+        send_transaction_email(self.request.user, amount, "Loan Request Message", "transactions/loan_email.html")
         return super().form_valid(form)
 
 
@@ -229,4 +229,6 @@ class SendMoneyView(TransactionCreateMixin):
             self.request,
             f'Successfully send {"{:,.2f}".format(float(amount))}$ from your account',
         )
+        send_transaction_email(self.request.user, amount, "Send Money Message", "transactions/send_money.html")
+        send_transaction_email(receiver_account.user, amount, "Receive Money Message", "transactions/receive_money.html")
         return super().form_valid(form)

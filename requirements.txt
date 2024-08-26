@@ -6,3 +6,4 @@ django-allauth
 Pillow
 watchdog>=4.0.1
 crispy-bootstrap5
+django-environ
